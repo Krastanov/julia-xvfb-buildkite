@@ -10,3 +10,8 @@ HEREDOC
 chmod +x /opt/julia
 
 export PATH=/opt/:"$PATH"
+
+echo "PATH is now $PATH"
+echo "The content of /opt/julia is"
+cat /opt/julia
+echo "which julia gives `which julia`"
