@@ -15,3 +15,5 @@ echo "PATH is now $PATH"
 echo "The content of /opt/julia is"
 cat /opt/julia
 echo "which julia gives `which julia`"
+echo "julia -e versioninfo()"
+julia -e "using InteractiveUtils; versioninfo()"
