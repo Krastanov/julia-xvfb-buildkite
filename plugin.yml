@@ -1,23 +1,7 @@
-name: Julia
-description: Set-up Julia for use in your pipeline.
-author: https://github.com/maleadt
-requirements: [python3, wget]
+name: Julia xvfb
+description: Run julia in xvfb.
+author: https://github.com/QuantumSavory
+requirements: [julia]
 configuration:
-  properties:
-    version:
-      type: string
-    arch:
-      type: string
-    isolated_depot:
-      type: boolean
-    persist_depot_dirs:
-      type: string
-    depot_hard_size_limit:
-      type: string
-    cleanup_collect_delay:
-      type: string
-    python:
-      type: string
-    debug_plugin:
-      type: boolean
+  properties: false
   additionalProperties: false
