@@ -4,12 +4,12 @@ shopt -s extglob
 
 cat <<HEREDOC > /opt/julia
 #!/usr/bin/env bash
-DISPLAY=:0 xvfb-run -s '-screen 0 1024x768x24' `which julia` \$@
+DISPLAY=:0 xvfb-run -s '-screen 0 1024x768x24' `which julia` "\$@"
 HEREDOC
 
 chmod +x /opt/julia
 
-export PATH=/opt/:"$PATH"
+export PATH=/opt:"$PATH"
 
 echo "PATH is now $PATH"
 echo "The content of /opt/julia is"
